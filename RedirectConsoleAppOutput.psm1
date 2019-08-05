@@ -281,7 +281,7 @@ function Start-ConsoleAppRedirectOutput {
     
     process {
         Write-Verbose -Message "$(New-TimeStamp) [$($MyInvocation.MyCommand)]: Starting process with arguments: `n$cmdString `nin folder: `"$($processObject.StartInfo.WorkingDirectory)`""
-        $processObject.Start()
+        $processObject.Start() | Out-Null
         $processAllOutput = New-Object -TypeName psobject
         switch ($OutputType) {
             'StandardOutput' {
