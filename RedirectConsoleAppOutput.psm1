@@ -148,6 +148,8 @@ function Set-ConsoleAppStartupParameters {
     }
 }
 
+Export-ModuleMember -Function 'Set-ConsoleAppStartupParameters'
+
 <#
 .SYNOPSIS
     The function reads the output of Windows console application.
@@ -312,3 +314,5 @@ function Start-ConsoleAppRedirectOutput {
         return $processAllOutput
     }
 }
+
+Export-ModuleMember -Function 'Start-ConsoleAppRedirectOutput'
