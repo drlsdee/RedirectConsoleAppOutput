@@ -7,8 +7,8 @@ The first function, **Set-ConsoleAppStartupParameters**, creates an object with 
 To specify the program that runs in the process, enter full path to the executable file or path to folder containing the executable file and the name of the executable file.
 
 You can also use remaining parameters of **Set-ConsoleAppStartupParameters** to specify command line arguments, working directory and encoding for output.
-## Set-ConsoleAppStartupParameters
-The second function, **Set-ConsoleAppStartupParameters**, starts the process and returns the output as an array of strings.
+## Start-ConsoleAppRedirectOutput
+The second function, **Start-ConsoleAppRedirectOutput**, starts the process and returns the output as an array of strings.
 
 You can specify command line arguments for application here or override them if they were specified earlier. You also may select an output type between standard output, standard errors or select both. And you may skip empty strings in the output or not (if you need it for some reason).
 
